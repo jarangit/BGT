@@ -12,20 +12,20 @@ const Question12 = (props: Props) => {
       <div style={{ margin: "10px" }}>
 
         <ul>
-          <li> SELECT
+          <li> {`SELECT
             s.Job_no,
             c.Customer_name as Shipper_name,
             FORMAT(s.Amount_usd * s.usd2thb_rate, 'N2') as Amount_TH,
-            sa.Sales_name</li>
+            sa.Sales_name`}</li>
           <li>FROM Shipments
           </li>
-          <li>INNER JOIN Customer c ON s.Shipper = c.Customer_id AND c.Country_code != 'TH'
+          <li>{`INNER JOIN Customer c ON s.Shipper = c.Customer_id AND c.Country_code != 'TH'`}
           </li>
-          <li>INNER JOIN Sales sa ON s.Sales_id = sa.Sales_id AND sa.Sales_name = 'ขจร'
+          <li>{`INNER JOIN Sales sa ON s.Sales_id = sa.Sales_id AND sa.Sales_name = 'ขจร'`}
           </li>
-          <li>LEFT JOIN Customer co ON s.Consignee = co.Customer_id AND co.Country_code != 'TH'
+          <li>{`LEFT JOIN Customer co ON s.Consignee = co.Customer_id AND co.Country_code != 'TH'`}
           </li>
-          <li>ORDER BY sa.Sales_name;
+          <li>{`ORDER BY sa.Sales_name;`}
           </li>
         </ul>
       </div>

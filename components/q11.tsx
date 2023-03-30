@@ -19,7 +19,7 @@ const Question11 = (props: Props) => {
           </li>
           <li>JOIN Shipments sh ON c.Customer_id = sh.Consignee
           </li>
-          <li>WHERE c.Country_code = 'US';
+          <li>{`WHERE c.Country_code = 'US';`}
           </li>
         </ul>
       </div>
