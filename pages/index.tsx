@@ -12,6 +12,10 @@ import Question6 from '@/components/q6'
 import Question7 from '@/components/q7'
 import Question8 from '@/components/q8'
 import Question9 from '@/components/q9'
+import Question10 from '@/components/q10'
+import Question11 from '@/components/q11'
+import Question12 from '@/components/q12'
+import Question13 from '@/components/q13'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -37,6 +41,10 @@ export default function Home() {
         <Question7 />
         <Question8 />
         <Question9 />
+        <Question10 />
+        <Question11 />
+        <Question12 />
+        <Question13 />
       </div>
     </>
   )
